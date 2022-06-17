@@ -1,0 +1,41 @@
+:root { 
+    --light1: #f4fec1ff;
+    --light2: #d9f9a5ff;
+    --middle-colour: #d2d68dff;
+    --dark1: #81726aff;
+    --dark2: #68534dff;
+}
+body {
+    background-color: var(--dark2);
+    color: var(--light1);}
+.post {
+    float: left;
+    width: 45%;
+    height: 45%;
+    background-color: #81726aff;
+    color: #d9f9a5ff;
+    margin: 5px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+@media (max-width: 600px) {
+    .post {
+        width: 100%;
+        }
+        }
+footer {
+    width: 100%;
+    bottom: 5px;
+}
+a:link.title {
+    color: var(--light2);
+}
+a:visited.title {
+    color: var(--light2);
+}
